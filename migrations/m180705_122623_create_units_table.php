@@ -20,6 +20,8 @@ class m180705_122623_create_units_table extends Migration
             'desc_ar' => $this->string(200),
             'time' => $this->double(),
             'courses_id' => $this->integer()->unsigned(),
+            'created_at'=>$this->dateTime(),
+            'updated_at'=>$this->dateTime(),
         ]);
     }
 

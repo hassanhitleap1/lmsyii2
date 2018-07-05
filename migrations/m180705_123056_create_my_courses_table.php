@@ -14,12 +14,13 @@ class m180705_123056_create_my_courses_table extends Migration
     {
         $this->createTable('my_courses', [
             'id' => $this->primaryKey(),
-
             'course_id' => $this->integer()->unsigned(),
             'user_id' => $this->integer()->unsigned(),
             'buy_date' => $this->dateTime(),
             'expiry_date' => $this->dateTime(),
             'status' => $this->smallInteger(200),
+            'created_at'=>$this->dateTime(),
+            'updated_at'=>$this->dateTime(),
         ]);
     }
 

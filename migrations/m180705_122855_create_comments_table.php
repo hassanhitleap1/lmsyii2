@@ -15,8 +15,9 @@ class m180705_122855_create_comments_table extends Migration
         $this->createTable('comments', [
             'id' => $this->primaryKey(),
             'content'=> $this->string(200),
-            'time' => $this->double(),
             'user_id' => $this->integer()->unsigned(),
+            'created_at'=>$this->dateTime(),
+            'updated_at'=>$this->dateTime(),
         ]);
     }
 

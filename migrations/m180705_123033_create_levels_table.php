@@ -17,6 +17,8 @@ class m180705_123033_create_levels_table extends Migration
             'name_en'=> $this->string(),
             'name_ar'=> $this->string(),
             'order' => $this->integer()->notNull(),
+            'created_at'=>$this->dateTime(),
+            'updated_at'=>$this->dateTime(),
         ]);
     }
 

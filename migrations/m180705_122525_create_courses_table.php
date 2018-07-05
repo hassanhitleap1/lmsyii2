@@ -19,6 +19,8 @@ class m180705_122525_create_courses_table extends Migration
             'teacher_id'=>$this->integer()->unsigned(),
             'level_id'=>$this->integer()->unsigned(),
             'time'=>$this->double(),
+            'created_at'=>$this->dateTime(),
+            'updated_at'=>$this->dateTime(),
         ]);
     }
 

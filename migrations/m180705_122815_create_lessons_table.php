@@ -21,7 +21,8 @@ class m180705_122815_create_lessons_table extends Migration
             'content'=> $this->string(200),
             'time' => $this->double(),
             'unit_id' => $this->integer()->unsigned(),
-
+            'created_at'=>$this->dateTime(),
+            'updated_at'=>$this->dateTime(),
         ]);
     }
 
