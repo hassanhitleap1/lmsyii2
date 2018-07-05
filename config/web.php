@@ -15,6 +15,9 @@ $config = [
         'admin' => [
             'class' => 'app\modules\admin\Admin',
         ],
+        'teacher' => [
+            'class' => 'app\modules\teacher\Teacher',
+        ],
     ],
     'components' => [
         'request' => [
