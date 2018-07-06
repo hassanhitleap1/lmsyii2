@@ -18,7 +18,7 @@ class Teacher extends \yii\base\Module
     public function init()
     {
         parent::init();
-
+        $this->layout = '@app/modules/teacher/views/layouts/main';
         // custom initialization code goes here
     }
 }
