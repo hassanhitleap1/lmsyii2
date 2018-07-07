@@ -21,6 +21,7 @@ AppAsset::register($this);
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <?= Html::csrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
+     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
     <?php $this->head() ?>
 </head>
 <body>
@@ -38,6 +39,7 @@ AppAsset::register($this);
     echo Nav::widget([
         'options' => ['class' => 'navbar-nav navbar-right'],
         'items' => [
+            ['label' => 'My Courses', 'url' => ['my-courses/index']],
             ['label' => 'Home', 'url' => ['courses/index']],
             ['label' => 'courses', 'url' => ['courses/index']],
             Yii::$app->user->isGuest ? (['label' => 'Login', 'url' => ['/site/login']]) : ('<li>'
